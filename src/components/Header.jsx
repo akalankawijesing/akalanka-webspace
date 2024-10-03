@@ -6,7 +6,7 @@ function Header() {
   return (
     <>
        
-
+    <Navigation/>
         <div id="header">
             <div id="particles"></div>
 
