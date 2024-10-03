@@ -5,8 +5,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import Index from "./pages/Index.jsx";
-import Dinosaur from "./pages/Dinosaur.jsx";
+
 
 export default function App(props) {
   return (
