@@ -19,7 +19,7 @@ function Header() {
             </div>
             <div className="header-content">
                 <div className="header-content-box">
-                <div className="firstline"><span className="color">Arlo </span>Brown</div>
+                <div className="firstline"><span className="color">Akalanka </span>Wijesinghe</div>
                 <div className="secondline">
                 I'm a
             <span className="txt-rotate color" data-period="1200"data-rotate='[ " Designer.", " Blogger.", " Freelancer." ]'></span>
