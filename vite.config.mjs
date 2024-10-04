@@ -6,6 +6,7 @@ import 'npm:react-dom@^18.2.0'
 import "npm:react-router-dom@^6.4";
 import 'npm:typewriter-effect@^2.21.0'
 import 'npm:react-type-animation@^3.2.0'
+import 'npm:react-animated-cursor@^2.11.2'
 
 // https://vitejs.dev/config/
 export default defineConfig({

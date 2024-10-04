@@ -6,6 +6,7 @@
     "serve": "deno run --allow-net --allow-read https://deno.land/std@0.157.0/http/file_server.ts dist/"
   },
   "imports": {
+    "react-animated-cursor": "npm:react-animated-cursor@^2.11.2",
     "react-type-animation": "npm:react-type-animation@^3.2.0",
     "typewriter-effect": "npm:typewriter-effect@^2.21.0"
   }

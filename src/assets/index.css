@@ -103,6 +103,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+#navigation-content.show-menu {
+    width: 100%;
+    transform: translateX(0px);
+  }
 #navigation-bar {
   position: fixed;
   height: 100px;
