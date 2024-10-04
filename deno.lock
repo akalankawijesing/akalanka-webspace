@@ -2,7 +2,9 @@
   "version": "3",
   "packages": {
     "specifiers": {
+      "npm:@gsap/react@^2.1.1": "npm:@gsap/react@2.1.1",
       "npm:@vitejs/plugin-react-swc@^3.5.0": "npm:@vitejs/plugin-react-swc@3.7.1_vite@5.4.8",
+      "npm:gsap@^3.12.5": "npm:gsap@3.12.5",
       "npm:react-dom@^18.2.0": "npm:react-dom@18.3.1_react@18.3.1",
       "npm:react-router-dom@^6.4": "npm:react-router-dom@6.26.2_react@18.3.1_react-dom@18.3.1__react@18.3.1",
       "npm:react@^18.2.0": "npm:react@18.3.1",
@@ -101,6 +103,13 @@
       "@esbuild/win32-x64@0.21.5": {
         "integrity": "sha512-tQd/1efJuzPC6rCFwEvLtci/xNFcTZknmXs98FYDfGE4wP9ClFV98nyKrzJKVPMhdDnjzLhdUyMX4PsQAPjwIw==",
         "dependencies": {}
+      },
+      "@gsap/react@2.1.1": {
+        "integrity": "sha512-apGPRrmpqxvl1T6Io1KgT8tFU+IuACI6z4zmT7t8+PASserJeLVRFJdSNUFA2Xb/eVkZI1noE8LIrY/w/oJECw==",
+        "dependencies": {
+          "gsap": "gsap@3.12.5",
+          "react": "react@18.3.1"
+        }
       },
       "@remix-run/router@1.19.2": {
         "integrity": "sha512-baiMx18+IMuD1yyvOGaHM9QrVUPGGG0jC+z+IPHnRJWUAUvaKuWKyE8gjDj2rzv3sz9zOGoRSPgeBVHRhZnBlA==",
@@ -280,6 +289,10 @@
         "integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==",
         "dependencies": {}
       },
+      "gsap@3.12.5": {
+        "integrity": "sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ==",
+        "dependencies": {}
+      },
       "js-tokens@4.0.0": {
         "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==",
         "dependencies": {}
@@ -454,5 +467,11 @@
     "https://deno.land/x/oak@v11.1.0/testing.ts": "7612656efd2975f7a2e6848609f5971922dbec46b76372c5c623202fdd7b9a85",
     "https://deno.land/x/oak@v11.1.0/util.ts": "3af8c4ed04c6cc2bedbe66e562a77fc59c72df31c55a902a63885861ca1639d6",
     "https://deno.land/x/path_to_regexp@v6.2.1/index.ts": "894060567837bae8fc9c5cbd4d0a05e9024672083d5883b525c031eea940e556"
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:@gsap/react@^2.1.1",
+      "npm:gsap@^3.12.5"
+    ]
   }
 }
