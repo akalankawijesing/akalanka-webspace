@@ -1,18 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState ,useRef, useEffect } from 'react';
 
 
 function Navigation() {
     const [navbarOpen, setNavbarOpen] = useState(false);
+    const ref = useRef();
+
+    useEffect(() => {
+        const handler = (event) => {
+          if (
+            navbarOpen &&
+            ref.current &&
+            !ref.current.contains(event.target)
+          ) {
+            setNavbarOpen(false);
+          }
+        };
+        document.addEventListener('mousedown', handler);
+        return () => {
+          // Cleanup the event listener
+          document.removeEventListener('mousedown', handler);
+        };
+      }, [navbarOpen]);
 
   return (
     <>
 
     
 
-        <div id="navigation-content" className={`${navbarOpen ? ' show-menu' : ''}`}>
+        <div id="navigation-content" ref={ref} className={`${navbarOpen ? ' show-menu' : ''}`}>
 
             <div className="logo">
-                <img src="images/logo.png" alt="logo"/>
+            <div className="logo-txt">akalanka<span className="color logo-cloud">.cloud</span></div>
                 
             </div>
 

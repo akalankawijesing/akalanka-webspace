@@ -102,12 +102,29 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: transform ease-in-out 0.2s;
 }
 
 #navigation-content.show-menu {
-    width: 100%;
-    transform: translateX(0px);
-  }
+  width: 100%;
+  transform: translateX(0px);
+  transition: transform ease-in-out 0.2s;
+}
+
+#navigation-content .logo-txt {
+  font-size: 44px;
+  font-weight: bold;
+  transition: all 0.4s ease;
+  font-family: poppins;
+  color: rgb(250, 250, 250);
+}
+#navigation-content .logo-cloud {
+  font-size: 44px;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+  font-family: poppins;
+}
 #navigation-bar {
   position: fixed;
   height: 100px;
@@ -236,23 +253,23 @@ body {
 }
 
 #navigation-bar .logo-txt {
-    font-size: 25px;
-    font-weight: bold;
-    position: absolute;
-    top: 15%;
-    left: 2.5%;
-    transition: all 0.4s ease;
-    font-family: poppins;
-    color: rgb(250, 250, 250);
-  }
-  #navigation-bar .logo-cloud {
-    font-size: 25px;
-    font-weight: bold;
-    position: absolute;
-    opacity: 0.8;
-    transition: all 0.4s ease;
-    font-family: poppins;
-  }
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: 15%;
+  left: 2.5%;
+  transition: all 0.4s ease;
+  font-family: poppins;
+  color: rgb(250, 250, 250);
+}
+#navigation-bar .logo-cloud {
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+  font-family: poppins;
+}
 #navigation-bar img:hover {
   opacity: 1;
   transform: rotate(-45deg);

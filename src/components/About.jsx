@@ -5,6 +5,7 @@ function About() {
 
   return (
     <>
+    <Navigation/>
     <div id="about-content">
         <div className="about-header">
             About <span className="color">Me</span>

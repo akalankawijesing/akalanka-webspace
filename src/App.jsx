@@ -8,6 +8,7 @@ import {
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Loading from "./components/Loading";
+import About from "./components/About";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -29,7 +30,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<Header/>} />
-
+        <Route exact path="/:about" element={<About/>} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
