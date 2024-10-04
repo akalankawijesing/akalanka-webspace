@@ -1,4 +1,6 @@
-import Navigation from "./Navigation"
+import Navigation from "./Navigation";
+import { TypeAnimation } from 'react-type-animation';
+
 
 function Header() {
 
@@ -21,9 +23,24 @@ function Header() {
                 <div className="header-content-box">
                 <div className="firstline"><span className="color">Akalanka </span>Wijesinghe</div>
                 <div className="secondline">
-                I'm a
-            <span className="txt-rotate color" data-period="1200"data-rotate='[ " Designer.", " Blogger.", " Freelancer." ]'></span>
-            <span className="slash">|</span>
+                <TypeAnimation
+         preRenderFirstString={true}
+         sequence={[
+           500,
+           "I'm a Developer", // initially rendered starting point
+           1000,
+           "I'm a Designer",
+           1000,
+           "I'm a Blogger",
+           1000,
+           "I'm a Freelancer",
+           500,
+         ]}
+         speed={50}
+         style={{ }}
+         repeat={Infinity}
+    />
+
         </div>
                     <div className="contact">
                 <a href="Mailto:#"><img src="images/mail.png" alt="email-pic" className="contactpic"/></a>

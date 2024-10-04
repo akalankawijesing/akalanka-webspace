@@ -9,7 +9,8 @@ function Navigation() {
 
         <div id="navigation-content">
             <div className="logo">
-                <img src="images/willy wonka logo.png" alt="logo"/>
+                <img src="images/logo.png" alt="logo"/>
+                
             </div>
             <div className="navigation-close">
                 <span className="close-first"></span>
@@ -24,7 +25,9 @@ function Navigation() {
             </div>
         </div>
         <div id="navigation-bar">
-            <img src="images/willy wonka logo.png" alt="logo"/>
+           
+        <div className="logo-txt">akalanka<span className="color logo-cloud">.cloud</span></div>
+
             <div className="menubar">
                 <span className="first-span"></span>
                 <span className="second-span"></span>
