@@ -30,7 +30,7 @@ function Navigation() {
         <div id="navigation-content" ref={ref} className={`${navbarOpen ? ' show-menu' : ''}`}>
 
             <div className="logo">
-            <div className="logo-txt">akalanka<span className="color logo-cloud">.cloud</span></div>
+            <a href="/"><div className="logo-txt">akalanka<span className="color logo-cloud">.cloud</span></div></a>
                 
             </div>
 
@@ -42,8 +42,8 @@ function Navigation() {
 
 
             <div className="navigation-links">
-                <a href="#" data-text="HOME" id="home-link" onClick={() => setNavbarOpen(false)} >HOME</a>
-                <a href="#" data-text="ABOUT" id="about-link" onClick={() => setNavbarOpen(false)} >ABOUT</a>
+                <a href="/" data-text="HOME" id="home-link" onClick={() => setNavbarOpen(false)} >HOME</a>
+                <a href="about" data-text="ABOUT" id="about-link" onClick={() => setNavbarOpen(false)} >ABOUT</a>
                 <a href="#" data-text="BLOG" id="blog-link" onClick={() => setNavbarOpen(false)} >BLOG</a>
                 <a href="#" data-text="PORTFOLIO" id="portfolio-link" onClick={() => setNavbarOpen(false)} >PORTFOLIO</a>
                 <a href="#" data-text="CONTACT" id="contact-link" onClick={() => setNavbarOpen(false)} >CONTACT</a>
@@ -55,7 +55,7 @@ function Navigation() {
 
         <div id="navigation-bar">
            
-        <div className="logo-txt">akalanka<span className="color logo-cloud">.cloud</span></div>
+        <a href="/"><div className="logo-txt">akalanka<span className="color logo-cloud">.cloud</span></div></a>
 
             <div className="menubar" onClick={() => setNavbarOpen((prev) => !prev)}>
                 

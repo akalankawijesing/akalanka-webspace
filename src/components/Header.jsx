@@ -21,6 +21,7 @@ function Header() {
             </div>
             <div className="header-content">
                 <div className="header-content-box">
+                
                 <div className="firstline"><span className="color">Akalanka </span>Wijesinghe</div>
                 <div className="secondline">
                 <TypeAnimation

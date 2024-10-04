@@ -16,10 +16,10 @@ function About() {
 
        <span className="about-first-line">
             I'm creative 
-            <span className="color">web developer</span>
-             based in New York , USA </span>
+            <span className="color"> developer </span>
+             based in Colombo , Sri Lanka </span>
              <br/>
-       <span className="about-second-line"> With 20 years of experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step while working.</span>
+       <span className="about-second-line"> With 3+ years of experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step while working.</span>
        <div className="cv">
         <a href="#"><button>Download <span className="colors">CV</span></button></a>
     </div>
